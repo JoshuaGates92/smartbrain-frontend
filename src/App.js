@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import Particles from 'react-particles-js';
 import ParticlesBg from 'particles-bg'
 import Clarifai from 'clarifai';
 import FaceRecognition from './components/FaceRecognition/FaceRecognition';
@@ -69,7 +68,6 @@ class App extends Component {
 
   onButtonSubmit = () => {
     this.setState({imageUrl: this.state.input});
-   
 
     app.models
       .predict(
